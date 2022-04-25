@@ -1,0 +1,19 @@
+{
+  "name": "open-app",
+  "version": "1.0.0",
+  "description": "to open app in WeChat H5",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "open-app",
+    "WeChat",
+    "H5"
+  ],
+  "author": "syt-honey",
+  "license": "MIT",
+  "dependencies": {
+    "weixin-js-sdk": "^1.6.0"
+  }
+}
