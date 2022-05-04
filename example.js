@@ -1,24 +1,26 @@
-import H5 from "./index";
+import { H5_APP } from "./index.js";
 
 try {
-  const dom = new H5({
+  const container = document.getElementById("app");
+
+  const dom = await H5_APP({
     wechatConfig: {
-      appId: "wx45aba6737c7e1a9f",
+      appId: "",
       timestamp: 0,
       nonceStr: "",
       signature: ""
     },
     openTagConfig: {
-      appid: "wx2be01a0789566f6d",
+      appid: "",
       extinfo: ""
     },
     btnContainerStyle: "",
     btnStyle: ""
   });
 
-  const container = document.getElementById("app");
-  dom.createDom(container);
-  dom.verify();
+  dom.mount(container);
+
+  console.log(dom)
   
 } catch(e) {
   console.log(e);
