@@ -70,24 +70,30 @@ class H5 {
       openTagList: ["wx-open-launch-app"]
     });
 
-    wx.error((e) => {
-      throw new Error(
-        `config error.${JSON.stringify(e, Object.getOwnPropertyNames(e))}`
-      );
-    });
-
-    wx.ready(() => {
+    checkIsReady().then(() => {
       // share to 
       wx.onMenuShareTimeline({
         title: "xxx",
         link: "",
         imgUrl: "",
         success: () => {
-         console.log('share success')
+          console.log('share success')
         },
         cancel: () => {}
       });
+    }).catch(err => {
+      // config error
+      throw new Error(
+        `config error.${JSON.stringify(e, Object.getOwnPropertyNames(e))}`
+      );
     });
+  }
+
+  checkIsReady() {
+    return new Promise((resolve, reject) => {
+      wx.ready(() => resolve())
+      wx.error(err => reject(err))
+    })
   }
 
   mount(container, target = this.openApp) {
