@@ -23,5 +23,4 @@ const H5_APP = (options) => {
   });
 }
 
-
 export { H5_APP };

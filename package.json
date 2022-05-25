@@ -4,7 +4,8 @@
   "description": "to open app in WeChat H5",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lib": "vue-cli-service build --target lib --name h5-app --dest lib lib/index.js"
   },
   "keywords": [
     "open-app",
@@ -16,5 +17,13 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "weixin-js-sdk": "^1.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syt-honey/h5-open-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/syt-honey/h5-open-app/issues"
+  },
+  "homepage": "https://github.com/syt-honey/h5-open-app#readme"
 }
