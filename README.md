@@ -1,4 +1,4 @@
-# Hoa
+# Whoa(Open App In WeChat H5)
 
 微信 H5 唤起 App 解决方案
 
@@ -8,12 +8,12 @@
 
 ```html
   <!-- 将文件下载到本地，然后配好路径 -->
-  <script src="/path/hoa.min.js"></script>
+  <script src="/path/whoa.min.js"></script>
 ```
 
 ```js
   (async function e() {
-    const { H5_APP } = Hoa;
+    const { H5_APP } = Whoa;
     const container = document.getElementById("app");
 
     const dom = await H5_APP({

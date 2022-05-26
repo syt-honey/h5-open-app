@@ -1,6 +1,6 @@
 (async function e() {
   try {
-    const { H5_APP } = Hoa;
+    const { H5_APP } = Whoa;
     const container = document.getElementById("app");
   
     const dom = await H5_APP({

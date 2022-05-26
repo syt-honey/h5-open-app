@@ -6,11 +6,11 @@ module.exports = () => {
     plugins: [terser()],
     output: [
       {
-        file: "./dist/hoa.min.js",
+        file: "./dist/whoa.min.js",
         format: 'iife',
-        name: 'Hoa'
+        name: 'Whoa'
       }, {
-        file: "./dist/hoa.esm.js",
+        file: "./dist/whoa.esm.js",
         format: 'esm',
       }
     ]
