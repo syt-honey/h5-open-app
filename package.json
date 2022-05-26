@@ -4,8 +4,8 @@
   "description": "to open app in WeChat H5",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lib": "vue-cli-service build --target lib --name h5-app --dest lib lib/index.js"
+    "lib-iife": "rollup index.js --file hoa.min.js --format iife --config",
+    "lib-esm": "rollup index.js --file hoa.esm.js --format esm --config"
   },
   "keywords": [
     "open-app",
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/syt-honey/h5-open-app/issues"
   },
-  "homepage": "https://github.com/syt-honey/h5-open-app#readme"
+  "homepage": "https://github.com/syt-honey/h5-open-app#readme",
+  "devDependencies": {
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }

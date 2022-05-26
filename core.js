@@ -5,8 +5,9 @@ class H5 {
   #DEFAULT_CONTAINER_STYLE = "position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;";
 
   constructor(options) {
-    const { wechatConfig, openTagConfig, btnContainerStyle, btnStyle, text = "打开APP"} = options;
-
+    const { wechatConfig, openTagConfig, btnContainerStyle, btnStyle, text = "打开APP", config } = options;
+    
+    this.wxDebugger = !!config.debug;
     this.wechatConfig = wechatConfig;
     
     const { appid, extinfo } = openTagConfig;
@@ -64,7 +65,7 @@ class H5 {
     } = this.wechatConfig;
 
     wx.config({
-      debug: false,
+      debug: this.wxDebugger,
       appId,
       timestamp,
       nonceStr,

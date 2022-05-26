@@ -3,14 +3,15 @@ import { H5 }  from "./core.js";
 const H5_APP = (options) => {
   return new Promise((resolve, reject) => {
     try {
-      const { wechatConfig, openTagConfig, btnContainerStyle, btnStyle, text } = options;
+      const { wechatConfig, openTagConfig, btnContainerStyle, btnStyle, text, config = {} } = options;
 
       const dom = new H5({
         wechatConfig,
         openTagConfig,
         btnContainerStyle,
         btnStyle,
-        text
+        text,
+        config
       });
 
       dom.createDom();
