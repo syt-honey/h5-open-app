@@ -4,8 +4,7 @@
   "description": "to open app in WeChat H5",
   "main": "index.ts",
   "scripts": {
-    "lib-iife": "rollup index.js --file hoa.min.js --format iife --config",
-    "lib-esm": "rollup index.js --file hoa.esm.js --format esm --config"
+    "lib": "rollup --config"
   },
   "keywords": [
     "open-app",
