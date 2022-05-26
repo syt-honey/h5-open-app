@@ -12,7 +12,7 @@
 ```
 
 ```js
-  (async function e () {
+  (async function e() {
     const { H5_APP } = Hoa;
     const container = document.getElementById("app");
 
