@@ -1,4 +1,4 @@
-(async function e () {
+(async function e() {
   try {
     const { H5_APP } = Hoa;
     const container = document.getElementById("app");
