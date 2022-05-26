@@ -22,6 +22,7 @@
     });
   
     if (dom !== -1) {
+      alert('create success...');
       dom.mount(container);
     }
   } catch(e) {
