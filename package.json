@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "to open app in WeChat H5",
   "private": false,
-  "main": "index.ts",
+  "main": "lib/who.min.js",
   "scripts": {
     "lib": "rollup --config"
   },
