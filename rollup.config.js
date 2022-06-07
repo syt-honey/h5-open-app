@@ -6,12 +6,9 @@ module.exports = () => {
     plugins: [terser()],
     output: [
       {
-        file: "./dist/whoa.min.js",
-        format: 'iife',
+        file: "./lib/whoa.min.js",
+        format: 'umd',
         name: 'Whoa'
-      }, {
-        file: "./dist/whoa.esm.js",
-        format: 'esm',
       }
     ]
   }

@@ -1,7 +1,8 @@
 {
-  "name": "open-app",
+  "name": "@honeysyt/h5-open-app",
   "version": "1.0.0",
   "description": "to open app in WeChat H5",
+  "private": false,
   "main": "index.ts",
   "scripts": {
     "lib": "rollup --config"
@@ -27,5 +28,8 @@
   "homepage": "https://github.com/syt-honey/h5-open-app#readme",
   "devDependencies": {
     "rollup-plugin-terser": "^7.0.2"
+  },
+  "directories": {
+    "example": "example"
   }
 }
