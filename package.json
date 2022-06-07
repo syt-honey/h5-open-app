@@ -1,6 +1,6 @@
 {
   "name": "@honeysyt/h5-open-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "to open app in WeChat H5",
   "private": false,
   "main": "index.ts",
