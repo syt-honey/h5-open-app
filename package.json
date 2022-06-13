@@ -1,13 +1,17 @@
 {
   "name": "@honeysyt/h5-open-app",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "to open app in WeChat H5",
   "private": false,
   "main": "lib/whoa.min.js",
   "scripts": {
     "lib": "rollup --config"
   },
-  "files": ["lib", "README.md", "LICENSE"],
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "open-app",
     "WeChat",
