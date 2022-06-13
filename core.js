@@ -1,8 +1,8 @@
 import wx from './utils/weixin-js-sdk/index.js';
 
 class H5 {
-  #DEFAULT_BTN_STYLE = "display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;color: #252525;outline: none;background: none;box-sizing: border-box;border-color: transparent;border: none;";
-  #DEFAULT_CONTAINER_STYLE = "position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;";
+  DEFAULT_BTN_STYLE = "display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;color: #252525;outline: none;background: none;box-sizing: border-box;border-color: transparent;border: none;";
+  DEFAULT_CONTAINER_STYLE = "position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;";
 
   constructor(options) {
     const { wechatConfig, openTagConfig, btnContainerStyle, btnStyle, text = "打开APP", config } = options;
@@ -13,8 +13,8 @@ class H5 {
     const { appid, extinfo } = openTagConfig;
     this.openTagConfig = { appid, extinfo };
 
-    this.btnStyle = this.#DEFAULT_BTN_STYLE + btnStyle;
-    this.btnContainerStyle = this.#DEFAULT_CONTAINER_STYLE + btnContainerStyle;
+    this.btnStyle = this.DEFAULT_BTN_STYLE + btnStyle;
+    this.btnContainerStyle = this.DEFAULT_CONTAINER_STYLE + btnContainerStyle;
     this.text = text;
     this.openApp = null;
 
@@ -38,22 +38,6 @@ class H5 {
     btn.classList.add("open-btn");
     script.appendChild(btn);
     this.openApp.appendChild(script);
-
-    ["error", "launch"].map((i) => {
-      this.openApp.addEventListener(i, (e) => {
-        this[`handle${this.titleFormat(i)}`](e);
-      });
-    });
-  }
-
-  handleError(e) {
-    throw new Error(
-      `open tag call error.${JSON.stringify(e, Object.getOwnPropertyNames(e))}`
-    );
-  }
-
-  handleLaunch(e) {
-    console.log(e, 'call success');
   }
 
   verify() {
