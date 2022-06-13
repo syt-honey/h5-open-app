@@ -3,10 +3,11 @@
   "version": "1.0.3",
   "description": "to open app in WeChat H5",
   "private": false,
-  "main": "lib/who.min.js",
+  "main": "lib/whoa.min.js",
   "scripts": {
     "lib": "rollup --config"
   },
+  "files": ["lib", "README.md", "LICENSE"],
   "keywords": [
     "open-app",
     "WeChat",
