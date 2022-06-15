@@ -24,4 +24,4 @@ const H5_APP = (options) => {
   });
 }
 
-export { H5_APP };
+export default { H5_APP };

@@ -4,6 +4,7 @@
   "description": "to open app in WeChat H5",
   "private": false,
   "main": "lib/whoa.min.js",
+  "module": "lib/whoa.esm.js",
   "scripts": {
     "lib": "rollup --config"
   },
@@ -19,10 +20,6 @@
   ],
   "author": "syt-honey",
   "license": "MIT",
-  "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "weixin-js-sdk": "^1.6.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/syt-honey/h5-open-app.git"
@@ -32,6 +29,10 @@
   },
   "homepage": "https://github.com/syt-honey/h5-open-app#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "babel-polyfill": "^6.26.0",
     "rollup-plugin-terser": "^7.0.2"
   },
   "directories": {
