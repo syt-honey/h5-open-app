@@ -103,5 +103,4 @@ Whoa(Open App In WeChat H5)，微信 H5 唤起 App 解决方案
 * 在开始之前，先确保已经按照文档准备好了配置信息。可以参考：[解读微信内网页跳转到APP方法，使用微信开放标签](https://developers.weixin.qq.com/community/develop/article/doc/0004ce19a04320850a5a114ab5b013)
 * 父级容器（如上面的 `container`）需要显示的设置定位方式。如设置 `position: relative;`
 * 可以通过添加 `config` 参数设置是否进行 debug
-* 不支持 IE 浏览器和 `Opera Mini` 浏览器
 * 基于框架的使用方式暂未测试
