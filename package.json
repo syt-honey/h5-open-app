@@ -1,6 +1,6 @@
 {
   "name": "@honeysyt/h5-open-app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "to open app in WeChat H5",
   "private": false,
   "main": "lib/whoa.min.js",
