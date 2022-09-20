@@ -5,6 +5,7 @@
   "private": false,
   "main": "lib/whoa.min.js",
   "module": "lib/whoa.esm.js",
+  "types": "lib/whoa.esm.d.ts",
   "scripts": {
     "lib": "rollup --config"
   },

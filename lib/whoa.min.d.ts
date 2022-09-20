@@ -1,0 +1,1 @@
+declare module '@honeysyt/h5-open-app'
